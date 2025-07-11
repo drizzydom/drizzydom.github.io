@@ -31,18 +31,18 @@ body::before {
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: 0;
   pointer-events: none;
-  background: repeating-linear-gradient(
-    120deg,
-    rgba(26,115,232,0.08) 0px,
-    rgba(26,115,232,0.08) 40px,
-    transparent 40px,
-    transparent 80px
+  background: linear-gradient(120deg,
+    rgba(26,115,232,0.10) 0px,
+    rgba(26,115,232,0.10) 8px,
+    transparent 8px,
+    transparent 48px
   );
-  animation: bg-move 12s linear infinite;
+  background-size: 56px 100%;
+  animation: bg-move 8s linear infinite;
 }
 @keyframes bg-move {
   0% { background-position: 0 0; }
-  100% { background-position: 160px 160px; }
+  100% { background-position: 56px 0; }
 }
 .maintenance-card {
   background: var(--card-bg);
