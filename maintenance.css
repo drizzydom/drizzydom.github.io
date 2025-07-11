@@ -36,8 +36,11 @@ body {
   animation: fadeIn 1.2s cubic-bezier(.4,0,.2,1);
 }
 .logo {
-  width: 90px;
-  height: 90px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 1.5rem;
   animation: bounce 1.5s infinite alternate cubic-bezier(.4,0,.2,1);
 }
@@ -70,8 +73,8 @@ body {
     max-width: 98vw;
   }
   .logo {
-    width: 64px;
-    height: 64px;
+    max-width: 90vw;
+    height: auto;
   }
   .maintenance-title {
     font-size: 1.3rem;
